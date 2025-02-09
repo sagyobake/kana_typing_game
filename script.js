@@ -26,7 +26,7 @@ document.addEventListener('keydown', (e) => {
     if (kana[index] !== undefined) {
         console.log(kana[index]);
         if (kana[index] === kana[i]) {
-            if (i >= kana.kength) { //全部打ち終わるとクリア表示する
+            if (i === kana.kength) { //全部打ち終わるとクリア表示する
                 clear();
             }
             i++;
