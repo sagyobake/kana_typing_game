@@ -15,6 +15,11 @@ kana.forEach(element => { //五十音のあいうえおをつくる
     question.innerText = kana.join('');
 });
 
+const clear = () => {
+    alert('clear!');
+    location.reload();
+}
+
 //キーボードが押されたときの動作
 document.addEventListener('keydown', (e) => {
     const index = alphabet.indexOf(e.key);
@@ -22,7 +27,7 @@ document.addEventListener('keydown', (e) => {
         console.log(kana[index]);
         if (kana[index] === kana[i]) {
             if (i >= kana.kength) { //全部打ち終わるとクリア表示する
-                alert('clear!');
+                clear();
             }
             i++;
             answer.innerText += kana[index];
