@@ -17,7 +17,7 @@ kana.forEach(element => { //五十音のあいうえおをつくる
 
 const clear = () => {
     alert('clear!');
-    location.reload();
+    i = 0;
 }
 
 //キーボードが押されたときの動作
